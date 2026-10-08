@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/github")
-@CrossOrigin(origins = "${cors.allowed-origins:http://localhost:3000}")
 @RequiredArgsConstructor
 public class GithubController {
     private final GithubService service;

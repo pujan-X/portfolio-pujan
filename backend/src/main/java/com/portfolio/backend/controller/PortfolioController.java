@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "${cors.allowed-origins:http://localhost:3000}")
 @RequiredArgsConstructor
 public class PortfolioController {
     private final PortfolioService service;

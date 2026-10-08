@@ -14,7 +14,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "${cors.allowed-origins:http://localhost:3000}")
 public class ContactController {
     private final ContactService service;
     private final Bucket bucket;

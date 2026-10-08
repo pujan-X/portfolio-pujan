@@ -167,6 +167,23 @@ Personal content lives in two places, and they should match:
 
 Replace the resume by dropping a new file at `frontend/public/resume.pdf`.
 
+| Variable | Description |
+| -------- | ----------- |
+| `NEXT_PUBLIC_API_URL` | The backend API URL for the frontend |
+| `SMTP_HOST` | SMTP server host for contact form |
+| `SMTP_PORT` | SMTP server port |
+| `SMTP_USER` | SMTP username/email |
+| `SMTP_PASS` | SMTP password/app password |
+| `MAIL_FROM` | Email address to send the contact forms from (defaults to SMTP_USER) |
+| `CONTACT_RECIPIENT` | Email address that receives the contact forms |
+| `GITHUB_TOKEN` | GitHub Personal Access Token for stats |
+| `CORS_ALLOWED_ORIGINS` | Comma-separated list of allowed CORS origins |
+| `DB_HOST` | Database host |
+| `DB_PORT` | Database port |
+| `DB_NAME` | Database name |
+| `DB_USER` | Database username |
+| `DB_PASS` | Database password |
+
 ## Deployment
 
 **Backend (Render or Railway)**

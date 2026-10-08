@@ -114,14 +114,7 @@ public class DataSeeder implements CommandLineRunner {
             for (String s : concepts) skillRepo.save(createSkill("Concepts", s, 90));
         }
         
-        if (experienceRepo.count() > 0) {
-            boolean hasOldData = experienceRepo.findAll().stream()
-                .anyMatch(e -> e.getRole() != null && e.getRole().contains("Java Internship Task"));
-            if (hasOldData) {
-                experienceRepo.deleteAll();
-            }
-        }
-        
+
         if (experienceRepo.count() == 0) {
             Experience e1 = new Experience();
             e1.setRole("Junior Java Developer Intern");
