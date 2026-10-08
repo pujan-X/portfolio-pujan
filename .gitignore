@@ -1,0 +1,26 @@
+# Root gitignore
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*.local
+
+# Backend (Java/Spring Boot)
+backend/target/
+backend/bin/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/
+backend/.mvn/
+
+# IDE and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
