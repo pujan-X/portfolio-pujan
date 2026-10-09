@@ -14,15 +14,6 @@ Dark, fast, animated, and built the way I build real projects: API first, contai
 
 </div>
 
-<!--
-After you deploy, add your links here:
-**Live site:** https://YOUR-SITE.vercel.app  |  **API docs:** https://YOUR-API.onrender.com/swagger-ui
-
-After you take screenshots, save them in docs/screenshots/ and add:
-![Hero](docs/screenshots/hero.png)
--->
-
----
 
 ## About this project
 
@@ -38,7 +29,7 @@ I built it as a full-stack project on purpose. The content is served by a REST A
 - **Skills, experience and certifications** rendered from structured data.
 - **Live GitHub activity** (repos, languages, recent activity), served through the backend and cached, so the browser never sees the GitHub token.
 - **Contact form** that validates input, stores the message and sends an email notification over SMTP.
-- **Documented REST API** with Swagger UI.
+- **Documented REST API**
 - **Runs anywhere:** a single `docker compose up --build`, or each service on its own.
 
 ## Tech stack
@@ -47,7 +38,7 @@ I built it as a full-stack project on purpose. The content is served by a REST A
 | --- | --- |
 | Frontend | Next.js 15 (App Router), React, TypeScript, Tailwind CSS v4, Framer Motion |
 | Backend | Spring Boot 3, Spring Web, Spring Data JPA, Bean Validation, Spring Mail |
-| API docs | springdoc-openapi (Swagger UI) |
+| API docs | springdoc-openapi  |
 | Database | H2 (local development), MySQL (production) |
 | DevOps | Docker, Docker Compose, Maven |
 | Hosting (planned) | Vercel (frontend), Render or Railway (backend) |
@@ -102,7 +93,6 @@ docker compose up --build
 | --- | --- |
 | Frontend | http://localhost:3000 |
 | Backend API | http://localhost:8080 |
-| Swagger UI | http://localhost:8080/swagger-ui |
 
 ### Option 2: Run each service separately
 
@@ -145,7 +135,7 @@ When running the backend outside Docker, set these as real environment variables
 
 ## API overview
 
-The backend serves the portfolio content and handles the contact form. Swagger UI at `/swagger-ui` is the source of truth for the exact routes and schemas.
+The backend serves the portfolio content and handles the contact form. 
 
 | Method | Endpoint | Purpose |
 | --- | --- | --- |
